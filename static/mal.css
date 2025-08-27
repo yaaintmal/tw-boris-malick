@@ -1,3 +1,7 @@
+h2 {
+  color: var(--text-color);
+}
+
 .btn-signup {
   background-color: #e2c5bb;
   color: #fef7f2;
