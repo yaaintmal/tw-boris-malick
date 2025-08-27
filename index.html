@@ -3,38 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./static/style.css" />
+    <title>Find Your Dream Home</title>
   </head>
   <body>
     <div id="root">
       <!-- Nav : Logo + Nav-Buttons + Signup-->
-      <div class="nav-container">
-        <div><img src="./static/img/logo.png" alt="logo-icon" /></div>
-        <div>
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>Service</li>
-              <li>Agents</li>
-              <li>Contact</li>
-            </ul>
-          </nav>
+      <header
+        class="flex justify-between items-center px-8 py-6 max-w-[1280px] mx-auto"
+      >
+        <!-- Logo -->
+        <div class="nav-container">
+          <img src="./static/icons/logo.png" alt="logo-icon" />
         </div>
-        <div>
-          <nav>
-            <ul>
-              <li>magnify-icon</li>
-              <li>user-icon</li>
-              <li><button>Sign Up</button></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+        <!-- Menu -->
+        <nav class="hidden md:flex space-x-4 text-lg font-medium">
+          <ul class="flex space-x-16">
+            <li>
+              <a href="#" class="font-bold text-[#2b1b12] hover:text-[#3a2518]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-bold text-[#2b1b12] hover:text-[#3a2518]"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-bold text-[#2b1b12] hover:text-[#3a2518]"
+                >Agents</a
+              >
+            </li>
+            <li>
+              <a href="#" class="font-bold text-[#2b1b12] hover:text-[#3a2518]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <!-- Header : PS-->
-      <header></header>
+        <div class="flex items-center space-x-8">
+          <img
+            src="static/icons/search.png"
+            alt="Discover icons created by Smashicons - Flaticon"
+            class="w-5 h-5"
+          />
+
+          <img
+            src="static/icons/user.png"
+            alt="User icons created by Graphics Plazza - Flaticon"
+            class="w-5 h-5"
+          />
+          <a
+            href="#"
+            class="bg-[#2b1b12] text-white px-6 py-2 rounded-lg hover:bg-[#3a2518]"
+            >Sign Up</a
+          >
+        </div>
+      </header>
+
+      <!-- Welcom Section-->
+      <section class="grid md:grid-cols-2 items-center px-8 md:px-20 py-16">
+        <div class="space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-[#2b1b12]">
+            Find Your <br />Dream Home
+          </h1>
+
+          <p class="text-[#4f3527] text-lg max-w-md">
+            Explore our curated selection of exquisite properties meticulously
+            tailored to your unique dream home vision
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-[#2b1b12] text-white px-6 py-3 rounded-lg font-medium hover:bg[#3a2518]"
+            >Sign Up</a
+          >
+        </div>
+        <div class="mt-10">
+          <img src="static/img/your-home.jpg" alt="Modern House" />
+        </div>
+      </section>
 
       <!-- Search : BK-->
       <aside
