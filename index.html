@@ -527,10 +527,12 @@
             </span>
             <input
               class="w-[30vw] pl-10 p-3 text-sm rounded border-0 border-[var(--input-color)] font-bold text-[var(--text-color)] bg-[var(--input-color)] hover:shadow-2xl focus:bg-[var(--background-color)] transition-all duration-300"
-              type="text"
+              type="email"
               name="location"
-              id="location"
+              id="email-input"
               placeholder="Enter your email adress"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required
             />
           </div>
           <div>
