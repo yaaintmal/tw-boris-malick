@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import url(./boris.css);
+@import url(./mal.css);
+
+/* setting first primary colors as variable */
+:root {
+  --input-color: #e2c5bb;
+  --footer-color: #e2c5bb;
+  --secondary-color: #ddc7bb;
+  --background-color: #fef7f2;
+}
