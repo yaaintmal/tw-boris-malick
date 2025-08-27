@@ -19,3 +19,11 @@ h2 {
   color: #2b1b12;
   transition: all 0.3s ease-in-out;
 }
+.arrow-icon {
+  cursor: pointer;
+}
+.arrow-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
