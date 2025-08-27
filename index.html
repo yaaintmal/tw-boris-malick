@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Find Your Dream Home</title>
   </head>
   <body>
     <div id="root">
@@ -36,7 +37,39 @@
       <header></header>
 
       <!-- Search : BK-->
-      <aside></aside>
+      <aside
+        class="flex flex-col justify-center items-center mx-auto w-full max-w-[1070px] h-[160px] sm:h-[140px] md:h-[160px] bg-[#DDC7BB] rounded-[18px]"
+      >
+        <div class="flex flex-col sm:flex-row gap-4">
+          <form action="">
+            <input
+              class="p-2 rounded border border-gray-300 bg-white"
+              type="text"
+              name="location"
+              id="location"
+              value=""
+              placeholder="Location"
+            />
+            <input
+              class="p-2 rounded border border-gray-300 bg-white"
+              type="text"
+              name="type"
+              id="type"
+              value=""
+              placeholder="Type"
+            />
+            <input
+              class="p-2 rounded border border-gray-300 bg-white"
+              type="text"
+              name="price-range"
+              id="price-range"
+              value=""
+              placeholder="Price Range"
+            />
+            <input type="button" value="Sign Up" />
+          </form>
+        </div>
+      </aside>
 
       <!-- Article One : PS-->
       <article></article>
