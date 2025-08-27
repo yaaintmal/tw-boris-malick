@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./static/style.css" />
   </head>
   <body>
     <div id="root">
@@ -39,7 +40,38 @@
       <aside></aside>
 
       <!-- Article One : PS-->
-      <article></article>
+      <article>
+        <div id="article-one-container" class="flex">
+          <div id="article-one-image" class="w-1/2 m-10">
+            <!-- insert svg image -->
+            <img src="./static/img/home-1.svg" alt="" />
+          </div>
+          <div id="article-one-content" class="w-1/2">
+            <h2 class="font-bold text-3xl m-10">
+              We Help You Find Your Dream Home
+            </h2>
+            <p class="m-10">
+              From cozy cottages to luxurious estates, our dedicated team guides
+              you through every step of the journey, ensuring your dream home
+              becomes a reality.
+            </p>
+            <div id="article-stats-container" class="flex m-10 gap-10">
+              <div>
+                <h3 class="font-bold text-3xl">8K+</h3>
+                <p class="text-sm">Houses avilable</p>
+              </div>
+              <div>
+                <h3 class="font-bold text-3xl">6K+</h3>
+                <p class="text-sm">Houses sold</p>
+              </div>
+              <div>
+                <h3 class="font-bold text-3xl">2K+</h3>
+                <p class="text-sm">Trusted agents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
 
       <!-- Why Choose Us : BK-->
       <main></main>
