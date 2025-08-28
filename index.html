@@ -64,8 +64,10 @@
       </header>
 
       <!-- Welcom Section-->
-      <section class="grid md:grid-cols-2 items-center px-8 md:px-20 py-16">
-        <div class="space-y-6">
+      <section
+        class="relative px-8 md:px-20 py-0 mx-auto w-full max-w-[1280px] bg-white overflow-hidden flex justify-between items-center"
+      >
+        <div class="space-y-6 max-w-xl">
           <h1 class="text-5xl md:text-6xl font-extrabold text-[#2b1b12]">
             Find Your <br />Dream Home
           </h1>
@@ -76,13 +78,16 @@
           </p>
           <a
             href="#"
-            class="inline-block bg-[#2b1b12] text-white px-6 py-3 rounded-lg font-medium hover:bg[#3a2518]"
+            class="inline-block bg-[#2b1b12] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#3a2518]"
             >Sign Up</a
           >
         </div>
-        <div class="">
-          <img src="static/img/home-2.svg" alt="Modern House" />
-        </div>
+
+        <img
+          src="static/img/your-home.png"
+          alt="Modern House"
+          class="h-[70vh] md:h-[80vh] object-contain -mr-28"
+        />
       </section>
 
       <!-- Search : BK-->
@@ -547,12 +552,14 @@
       </section>
 
       <!-- Footer : Logo + Grid > 5 Boxes : BK-->
-      <footer>
-        <div id="footer-logo-closer"></div>
-        <div id="footer-about"></div>
-        <div id="footer-support"></div>
-        <div id="footer-find-us"></div>
-        <div id="footer-social-media"></div>
+      <footer
+        class="grid grid-cols-5 gap-6 w-full bg-[#DDC7BB] pt-6 pb-12 px-8"
+      >
+        <div id="footer-logo-closer" class="relative">aa</div>
+        <div id="footer-about" class="relative">bb</div>
+        <div id="footer-support" class="relative">cc</div>
+        <div id="footer-find-us" class="relative">dd</div>
+        <div id="footer-social-media" class="relative">ee</div>
       </footer>
     </div>
   </body>
