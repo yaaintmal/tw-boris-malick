@@ -11,7 +11,7 @@
     <div id="root">
       <!-- Nav : Logo + Nav-Buttons + Signup-->
       <header
-        class="flex justify-between items-center px-8 py-6 max-w-[1280px] mx-auto"
+        class="flex justify-between items-center px-8 py-6 max-w-[1360px] mx-auto"
       >
         <!-- Logo -->
         <div class="nav-container">
@@ -65,7 +65,7 @@
 
       <!-- Welcom Section-->
       <section
-        class="relative px-8 md:px-20 py-0 mx-auto w-full max-w-[1280px] bg-white overflow-hidden flex justify-between items-center"
+        class="relative px-8 md:px-20 py-0 mx-auto w-full max-w-[1360px] bg-white overflow-hidden flex justify-between items-center"
       >
         <div class="space-y-6 max-w-xl">
           <h1 class="text-5xl md:text-6xl font-extrabold text-[#2b1b12]">
@@ -166,7 +166,7 @@
       </aside>
 
       <!-- Article One : PS-->
-      <article class="max-w-[1280px] mx-auto mb-20">
+      <article class="max-w-[1360px] mx-auto mb-20">
         <div id="article-one-container" class="flex">
           <div id="article-one-image" class="w-1/2 m-10">
             <img src="./static/img/home-1.svg" alt="" />
@@ -199,14 +199,94 @@
       </article>
 
       <!-- Why Choose Us : BK-->
-      <main></main>
+      <section class="mb-25">
+        <h2 class="font-bold text-4xl m-10 text-center">Why Choose Us</h2>
+        <h4 class="font-bold mt-0 mb-10 text-center text-[#4F3527]">
+          Elevating Your Home Buying Experience with Expertise, Integrity,
+          <br />and Unmatched Personalized Service
+        </h4>
+        <div
+          id="choose-us-container-root"
+          class="flex justify-between max-w-[1360px] m-auto"
+        >
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img class="rounded-t-2xl" src="./static/img/res-1.svg" alt="" />
+              <div class="flex gap-0.5 pt-1.5 mt-2 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Expert Guidance</h3>
+                  <p class="mt-2">
+                    Benefit from our team's seasoned expertise for a smooth
+                    buying experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img class="rounded-t-2xl" src="./static/img/res-1.svg" alt="" />
+              <div class="flex gap-0.5 pt-1.5 mt-2 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Personalized Service</h3>
+                  <p class="mt-2">
+                    Our services adapt to your unique needs, making your journey
+                    stress-free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img class="rounded-t-2xl" src="./static/img/res-1.svg" alt="" />
+              <div class="flex gap-0.5 pt-1.5 mt-2 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Transparent Process</h3>
+                  <p class="mt-2">
+                    Stay informed with our clear and honest approach to buying
+                    your home
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img class="rounded-t-2xl" src="./static/img/res-1.svg" alt="" />
+              <div class="flex gap-0.5 pt-1.5 mt-2 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Exceptional Support</h3>
+                  <p class="mt-2">
+                    Providing peace of mind with our responsive and attentive
+                    customer service
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Our Popular Residences : PS -->
       <section class="mb-25">
-        <h2 class="font-bold text-3xl m-10 text-center">
+        <h2 class="font-bold text-4xl m-10 text-center">
           Our Popular Residences
         </h2>
-        <div id="residences-container-root" class="flex justify-between">
+        <div
+          id="residences-container-root"
+          class="flex justify-between max-w-[1360px] m-auto"
+        >
           <div id="residences-container" class="flex gap-10 m-5">
             <div
               class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
@@ -357,12 +437,15 @@
           id="comments-root-container"
           class="bg-[var(--background-color)] pt-6 pb-6"
         >
-          <div class="w-[250px] mx-auto flex justify-center mt-2 p-1 gap-x-10">
-            <h2 class="font-bold text-3xl text-center mt-2 p-1 gap-x-10 mb-3">
+          <div class="w-[20%] mx-auto flex justify-center mt-2 p-1 gap-x-10">
+            <h2 class="font-bold text-4xl text-center mt-2 p-1 gap-x-10 mb-3">
               What People Say About Dwello
             </h2>
           </div>
-          <div id="wps-root-container" class="flex justify-center">
+          <div
+            id="wps-root-container"
+            class="flex justify-center max-w-[1360px] mx-auto"
+          >
             <!-- start wps-box 1-->
             <div id="wps-container" class="flex gap-10 m-5">
               <div
@@ -507,8 +590,8 @@
       <!-- Contact Us / FAQ : PS -->
       <section class="mb-25 mt-25">
         <div class="w-[40vw] mx-auto flex justify-center mt-2 p-1 gap-3 mb-3">
-          <h2 class="font-bold text-3xl text-center mt-2 p-1 mb-3">
-            Do You Have Any Questions? Get Help From Us
+          <h2 class="font-bold text-4xl text-center mt-2 p-1 mb-3">
+            Do You Have Any Questions? <br />Get Help From Us
           </h2>
         </div>
         <div
@@ -553,13 +636,109 @@
 
       <!-- Footer : Logo + Grid > 5 Boxes : BK-->
       <footer
-        class="grid grid-cols-5 gap-6 w-full bg-[#DDC7BB] pt-6 pb-12 px-8"
+        class="grid [grid-template-columns:30%_1fr_1fr_1fr_1fr] gap-6 w-full bg-[#DDC7BB] pt-16 pb-30 px-20"
       >
-        <div id="footer-logo-closer" class="relative">aa</div>
-        <div id="footer-about" class="relative">bb</div>
-        <div id="footer-support" class="relative">cc</div>
-        <div id="footer-find-us" class="relative">dd</div>
-        <div id="footer-social-media" class="relative">ee</div>
+        <div id="footer-logo-closer" class="relative">
+          <img src="static/icons/logo.png" alt="" class="mb-2 w-1xs" />
+          <p class="text-[#4F3527] ml-2 font-bold w-4/6">
+            Bringing you closer to your dream home, one click at a time.
+          </p>
+        </div>
+        <div id="footer-about" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">About</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Our Story</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Careers</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Our Team</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Resources</a>
+            </li>
+          </nav>
+        </div>
+        <div id="footer-support" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Support</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Help Center</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              Terms of Service
+            </li>
+          </nav>
+        </div>
+        <div id="footer-find-us" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Find Us</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Events</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Locations</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Newsletter</a>
+            </li>
+          </nav>
+        </div>
+        <div id="footer-social-media" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Our Social</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/instagram.png"
+                    alt="Instagram logo icons created by Freepik - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <span class="ml-8"><a href="#">Instagram</a></span>
+              </div>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/facebook.png"
+                    alt="Facebook icons created by Freepik - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <span class="ml-8"><a href="#">Facebook</a></span>
+              </div>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/social-media.png"
+                    alt="Twitter x icons created by khulqi Rosyid - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <span class="ml-8"><a href="#">Twitter (x)</a></span>
+              </div>
+            </li>
+          </nav>
+        </div>
       </footer>
     </div>
   </body>
