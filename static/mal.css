@@ -28,3 +28,39 @@ h2 {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+.text-circle {
+  position: relative;
+  width: 200px; /* adjust the size of the circle */
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-circle span {
+  /* position: absolute;
+  transform-origin: center;*/
+
+  animation: rotate 10s linear infinite;
+  /* adjusting text so it's content get display in a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2b1b12;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
