@@ -39,10 +39,21 @@ h2 {
 }
 
 .text-circle span {
-  position: absolute;
-  transform-origin: center;
-  transform: rotate(0deg);
+  /* position: absolute;
+  transform-origin: center;*/
+
   animation: rotate 10s linear infinite;
+  /* adjusting text so it's content get display in a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2b1b12;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 @keyframes rotate {
