@@ -65,33 +65,44 @@
 
       <!-- Welcom Section-->
       <section
-        class="relative px-8 md:px-20 py-0 mx-auto w-full max-w-[1360px] bg-white overflow-hidden flex justify-between items-center"
+        class="relative px-8 md:p-20 mx-auto w-full max-w-[1360px] bg-white overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center gap-10"
       >
-        <div class="space-y-6 max-w-xl">
+        <div class="space-y-6 max-w-xl text-center md:text-left z-10">
           <h1
-            class="text-5xl md:text-6xl font-extrabold text-[#2b1b12] tracking-wider leading-tight"
+            class="text-4xl lg:text-6xl font-extrabold text-[#2b1b12] tracking-wider leading-tight"
           >
             Find Your <br />Dream Home
           </h1>
 
           <p
-            class="text-[#4f3527] max-w-md font-bold tracking-wider leading-tight mb-14"
+            class="text-[var(--paragraph-color)] max-w-md font-bold tracking-wider leading-tight mb-14 mx-auto md:mx-0"
           >
             Explore our curated selection of exquisite <br />properties
             meticulously tailored to your <br />unique dream home vision
           </p>
           <a
             href="#"
-            class="inline-block bg-[#2b1b12] text-white px-14 py-3 rounded-lg font-medium hover:bg-[#3a2518]"
+            class="inline-block bg-[#2b1b12] text-white px-14 py-3 rounded-lg font-medium hover:bg-[#3a2518] transition"
             >Sign Up</a
           >
         </div>
 
-        <img
-          src="static/img/your-home.png"
-          alt="Modern House"
-          class="h-[70vh] md:h-[80vh] object-contain -mr-28"
-        />
+        <div class="relative hidden md:block">
+          <img
+            src="static/img/your-home.png"
+            alt="Modern House"
+            class="absolute right-0 top-1/2 -translate-y-1/2 w-[150%] max-w-none -mr-20 object-contain pointer-events-none select-none"
+          />
+        </div>
+
+        <!-- Version mobile (image en dessous) -->
+        <div class="md:hidden mt-10 flex justify-center">
+          <img
+            src="static/img/your-home.png"
+            alt="Modern House"
+            class="h-[50vh] object-contain"
+          />
+        </div>
       </section>
 
       <!-- Search : BK-->
@@ -171,11 +182,17 @@
 
       <!-- Article One : PS-->
       <article class="max-w-[1360px] mx-auto mb-20">
-        <div id="article-one-container" class="flex">
-          <div id="article-one-image" class="w-1/2 m-10">
+        <div
+          id="article-one-container"
+          class="grid grid-cols-1 md:grid-cols-2 items-center gap-10"
+        >
+          <div id="article-one-image" class="m-6 md:m-10">
             <img src="./static/img/home-1.svg" alt="" />
           </div>
-          <div id="article-one-content" class="w-1/2">
+          <div
+            id="article-one-content"
+            class="m-6 md:m-10 text-center md:text-left"
+          >
             <h2
               class="font-extrabold text-4xl m-10 tracking-wider leading-normal"
             >
@@ -188,7 +205,7 @@
             </p>
             <div
               id="article-stats-container"
-              class="flex mt-15 m-10 gap-20 text-[#4F3527]"
+              class="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-20 m-10 text-[var(--paragraph-color)]"
             >
               <div>
                 <h3 class="font-bold text-5xl">8K+</h3>
@@ -210,13 +227,15 @@
       <!-- Why Choose Us : BK-->
       <section class="mb-25">
         <h2 class="font-bold text-4xl m-10 text-center">Why Choose Us</h2>
-        <h4 class="font-bold mt-0 mb-10 text-center text-[#4F3527]">
+        <h4
+          class="font-bold mt-0 mb-10 mx-10 text-center text-[var(--paragraph-color)]"
+        >
           Elevating Your Home Buying Experience with Expertise, Integrity,
           <br />and Unmatched Personalized Service
         </h4>
         <div
           id="choose-us-container-root"
-          class="flex justify-between max-w-[1360px] m-auto"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-[1360px] m-auto"
         >
           <div id="choose-us-container" class="flex gap-10 m-5">
             <div
@@ -310,7 +329,7 @@
         </h2>
         <div
           id="residences-container-root"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mx-5"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[1360px] mx-auto"
         >
           <div
             class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
@@ -348,7 +367,7 @@
               </div>
               <div class="ml-0.5">3,500 sq ft</div>
             </div>
-            <div class="flex gap-2.5 justify-between mt-1.5">
+            <div class="flex gap-2.5 justify-between mt-1.5 mb-2.5">
               <button class="button m-2.5 btn-signup" type="button">
                 Sign up
               </button>
@@ -393,7 +412,7 @@
               </div>
               <div class="ml-0.5">1,500 sq ft</div>
             </div>
-            <div class="flex gap-2.5 justify-between mt-1.5">
+            <div class="flex gap-2.5 justify-between mt-1.5 mb-2.5">
               <button class="button m-2.5 btn-signup" type="button">
                 Sign up
               </button>
@@ -436,7 +455,7 @@
               </div>
               <div class="ml-0.5">4,000 sq ft</div>
             </div>
-            <div class="flex gap-2.5 justify-between mt-1.5">
+            <div class="flex gap-2.5 justify-between mt-1.5 mb-2.5">
               <button class="button m-2.5 btn-signup" type="button">
                 Sign up
               </button>
@@ -462,7 +481,7 @@
           </div>
           <div
             id="wps-root-container"
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 m-5"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[1360px] mx-auto"
           >
             <div
               class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
@@ -641,23 +660,23 @@
       >
         <div id="footer-logo-closer" class="relative">
           <img src="static/icons/logo.png" alt="" class="mb-2 w-1xs" />
-          <p class="text-[#4F3527] ml-2 font-bold w-4/6">
+          <p class="text-[var(--paragraph-color)] ml-2 font-bold w-4/6">
             Bringing you closer to your dream home, one click at a time.
           </p>
         </div>
         <div id="footer-about" class="relative">
           <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">About</h3>
           <nav class="list-none space-y-4 font-bold">
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Our Story</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Careers</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Our Team</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Resources</a>
             </li>
           </nav>
@@ -665,16 +684,16 @@
         <div id="footer-support" class="relative">
           <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Support</h3>
           <nav class="list-none space-y-4 font-bold">
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">FAQ</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Contact Us</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Help Center</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               Terms of Service
             </li>
           </nav>
@@ -682,13 +701,13 @@
         <div id="footer-find-us" class="relative">
           <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Find Us</h3>
           <nav class="list-none space-y-4 font-bold">
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Events</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Locations</a>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <a href="#">Newsletter</a>
             </li>
           </nav>
@@ -696,7 +715,7 @@
         <div id="footer-social-media" class="relative">
           <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Our Social</h3>
           <nav class="list-none space-y-4 font-bold">
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <div class="relative">
                 <span
                   class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
@@ -710,7 +729,7 @@
                 <span class="ml-8"><a href="#">Instagram</a></span>
               </div>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <div class="relative">
                 <span
                   class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
@@ -724,7 +743,7 @@
                 <span class="ml-8"><a href="#">Facebook</a></span>
               </div>
             </li>
-            <li class="text-[#4F3527] hover:text-[#3a2518]">
+            <li class="text-[var(--paragraph-color)] hover:text-[#3a2518]">
               <div class="relative">
                 <span
                   class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
