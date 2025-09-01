@@ -11,7 +11,7 @@
     <div id="root">
       <!-- Nav : Logo + Nav-Buttons + Signup-->
       <header
-        class="flex justify-between items-center px-8 py-6 max-w-[1280px] mx-auto"
+        class="flex justify-between items-center px-8 py-6 max-w-[1360px] mx-auto"
       >
         <!-- Logo -->
         <div class="nav-container">
@@ -64,25 +64,34 @@
       </header>
 
       <!-- Welcom Section-->
-      <section class="grid md:grid-cols-2 items-center px-8 md:px-20 py-16">
-        <div class="space-y-6">
-          <h1 class="text-5xl md:text-6xl font-extrabold text-[#2b1b12]">
+      <section
+        class="relative px-8 md:px-20 py-0 mx-auto w-full max-w-[1360px] bg-white overflow-hidden flex justify-between items-center"
+      >
+        <div class="space-y-6 max-w-xl">
+          <h1
+            class="text-5xl md:text-6xl font-extrabold text-[#2b1b12] tracking-wider leading-tight"
+          >
             Find Your <br />Dream Home
           </h1>
 
-          <p class="text-[#4f3527] text-lg max-w-md">
-            Explore our curated selection of exquisite properties meticulously
-            tailored to your unique dream home vision
+          <p
+            class="text-[#4f3527] max-w-md font-bold tracking-wider leading-tight mb-14"
+          >
+            Explore our curated selection of exquisite <br />properties
+            meticulously tailored to your <br />unique dream home vision
           </p>
           <a
             href="#"
-            class="inline-block bg-[#2b1b12] text-white px-6 py-3 rounded-lg font-medium hover:bg[#3a2518]"
+            class="inline-block bg-[#2b1b12] text-white px-14 py-3 rounded-lg font-medium hover:bg-[#3a2518]"
             >Sign Up</a
           >
         </div>
-        <div class="">
-          <img src="static/img/home-2.svg" alt="Modern House" />
-        </div>
+
+        <img
+          src="static/img/your-home.png"
+          alt="Modern House"
+          class="h-[70vh] md:h-[80vh] object-contain -mr-28"
+        />
       </section>
 
       <!-- Search : BK-->
@@ -161,32 +170,37 @@
       </aside>
 
       <!-- Article One : PS-->
-      <article class="max-w-[1280px] mx-auto mb-20">
+      <article class="max-w-[1360px] mx-auto mb-20">
         <div id="article-one-container" class="flex">
           <div id="article-one-image" class="w-1/2 m-10">
             <img src="./static/img/home-1.svg" alt="" />
           </div>
           <div id="article-one-content" class="w-1/2">
-            <h2 class="font-bold text-3xl m-10">
-              We Help You Find Your Dream Home
+            <h2
+              class="font-extrabold text-4xl m-10 tracking-wider leading-normal"
+            >
+              We Help You To Find <br />Your Dream Home
             </h2>
             <p class="m-10 text-[var(--subtitle-color)]">
               From cozy cottages to luxurious estates, our dedicated team guides
               you through every step of the journey, ensuring your dream home
               becomes a reality.
             </p>
-            <div id="article-stats-container" class="flex m-10 gap-10">
+            <div
+              id="article-stats-container"
+              class="flex mt-15 m-10 gap-20 text-[#4F3527]"
+            >
               <div>
-                <h3 class="font-bold text-3xl">8K+</h3>
-                <p class="text-sm">Houses avilable</p>
+                <h3 class="font-bold text-5xl">8K+</h3>
+                <p class="text-sm font-medium">Houses avilable</p>
               </div>
               <div>
-                <h3 class="font-bold text-3xl">6K+</h3>
-                <p class="text-sm">Houses sold</p>
+                <h3 class="font-bold text-5xl">6K+</h3>
+                <p class="text-sm font-medium">Houses sold</p>
               </div>
               <div>
-                <h3 class="font-bold text-3xl">2K+</h3>
-                <p class="text-sm">Trusted agents</p>
+                <h3 class="font-bold text-5xl">2K+</h3>
+                <p class="text-sm font-medium">Trusted agents</p>
               </div>
             </div>
           </div>
@@ -194,11 +208,104 @@
       </article>
 
       <!-- Why Choose Us : BK-->
-      <main></main>
+      <section class="mb-25">
+        <h2 class="font-bold text-4xl m-10 text-center">Why Choose Us</h2>
+        <h4 class="font-bold mt-0 mb-10 text-center text-[#4F3527]">
+          Elevating Your Home Buying Experience with Expertise, Integrity,
+          <br />and Unmatched Personalized Service
+        </h4>
+        <div
+          id="choose-us-container-root"
+          class="flex justify-between max-w-[1360px] m-auto"
+        >
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img
+                class="rounded w-20 h-20 p-3.5 bg-white mt-8 ml-8"
+                src="./static/icons/location.png"
+                alt=""
+              />
+              <div class="flex gap-0.5 pt-1.5 mt-0 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Expert Guidance</h3>
+                  <p class="mt-2">
+                    Benefit from our team's seasoned expertise for a smooth
+                    buying experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img
+                class="rounded w-20 h-20 p-3.5 bg-white mt-8 ml-8"
+                src="./static/icons/personal.png"
+                alt=""
+              />
+              <div class="flex gap-0.5 pt-1.5 mt-0 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Personalized Service</h3>
+                  <p class="mt-2">
+                    Our services adapt to your unique needs, making your journey
+                    stress-free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img
+                class="rounded w-20 h-20 p-3.5 bg-white mt-8 ml-8"
+                src="./static/icons/to-do-list.png"
+                alt=""
+              />
+              <div class="flex gap-0.5 pt-1.5 mt-0 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Transparent Process</h3>
+                  <p class="mt-2">
+                    Stay informed with our clear and honest approach to buying
+                    your home
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="choose-us-container" class="flex gap-10 m-5">
+            <div
+              class="flex flex-col bg-[var(--residences-color)] rounded-2xl m-2.5 hover:shadow-2xl"
+            >
+              <img
+                class="rounded w-20 h-20 p-3.5 bg-white mt-8 ml-8"
+                src="./static/icons/handshake.png"
+                alt=""
+              />
+              <div class="flex gap-0.5 pt-1.5 mt-0 m-8">
+                <div>
+                  <h3 class="font-bold text-lg mt-2.5">Exceptional Support</h3>
+                  <p class="mt-2">
+                    Providing peace of mind with our responsive and attentive
+                    customer service
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Our Popular Residences : PS -->
       <section class="mb-25">
-        <h2 class="font-bold text-3xl m-10 text-center">
+        <h2 class="font-bold text-4xl m-10 text-center">
           Our Popular Residences
         </h2>
         <div
@@ -346,9 +453,11 @@
           id="comments-root-container"
           class="bg-[var(--background-color)] pt-6 pb-6"
         >
-          <div class="w-[250px] mx-auto flex justify-center mt-2 p-1 gap-x-10">
-            <h2 class="font-bold text-3xl text-center mt-2 p-1 gap-x-10 mb-3">
-              What People Say About Dwello
+          <div class="w-[80%] mx-auto flex justify-center mt-2 p-1 gap-x-10">
+            <h2
+              class="font-bold text-4xl text-center mt-2 p-1 gap-x-10 mb-3 leading-normal"
+            >
+              What People Say <br />About Dwello
             </h2>
           </div>
           <div
@@ -479,9 +588,11 @@
 
       <!-- Contact Us / FAQ : PS -->
       <section class="mb-25 mt-25">
-        <div class="w-[40vw] mx-auto flex justify-center mt-2 p-1 gap-3 mb-3">
-          <h2 class="font-bold text-3xl text-center mt-2 p-1 mb-3">
-            Do You Have Any Questions? Get Help From Us
+        <div class="w-[80%] mx-auto flex justify-center mt-2 p-1 gap-3 mb-3">
+          <h2
+            class="font-bold text-4xl text-center mt-2 p-1 mb-3 leading-normal"
+          >
+            Do You Have Any Questions? <br />Get Help From Us
           </h2>
         </div>
         <div
@@ -525,12 +636,110 @@
       </section>
 
       <!-- Footer : Logo + Grid > 5 Boxes : BK-->
-      <footer>
-        <div id="footer-logo-closer"></div>
-        <div id="footer-about"></div>
-        <div id="footer-support"></div>
-        <div id="footer-find-us"></div>
-        <div id="footer-social-media"></div>
+      <footer
+        class="grid [grid-template-columns:30%_1fr_1fr_1fr_1fr] gap-6 w-full bg-[#DDC7BB] pt-16 pb-30 px-20"
+      >
+        <div id="footer-logo-closer" class="relative">
+          <img src="static/icons/logo.png" alt="" class="mb-2 w-1xs" />
+          <p class="text-[#4F3527] ml-2 font-bold w-4/6">
+            Bringing you closer to your dream home, one click at a time.
+          </p>
+        </div>
+        <div id="footer-about" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">About</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Our Story</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Careers</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Our Team</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Resources</a>
+            </li>
+          </nav>
+        </div>
+        <div id="footer-support" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Support</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Help Center</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              Terms of Service
+            </li>
+          </nav>
+        </div>
+        <div id="footer-find-us" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Find Us</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Events</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Locations</a>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <a href="#">Newsletter</a>
+            </li>
+          </nav>
+        </div>
+        <div id="footer-social-media" class="relative">
+          <h3 class="text-[#2B1B12] mt-2.5 mb-3 font-extrabold">Our Social</h3>
+          <nav class="list-none space-y-4 font-bold">
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/instagram.png"
+                    alt="Instagram logo icons created by Freepik - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <span class="ml-8"><a href="#">Instagram</a></span>
+              </div>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/facebook.png"
+                    alt="Facebook icons created by Freepik - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <span class="ml-8"><a href="#">Facebook</a></span>
+              </div>
+            </li>
+            <li class="text-[#4F3527] hover:text-[#3a2518]">
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 left-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/social-media.png"
+                    alt="Twitter x icons created by khulqi Rosyid - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <span class="ml-8"><a href="#">Twitter (x)</a></span>
+              </div>
+            </li>
+          </nav>
+        </div>
       </footer>
     </div>
   </body>
