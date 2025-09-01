@@ -11,7 +11,7 @@
     <div id="root">
       <!-- Nav : Logo + Nav-Buttons + Signup-->
       <header
-        class="flex justify-between items-center px-8 py-6 max-w-[1360px] mx-auto"
+        class="flex justify-between items-center px-8 py-6 max-w-[1360px] mx-auto bg-[#fef7f2]"
       >
         <!-- Logo -->
         <div class="nav-container">
@@ -63,9 +63,9 @@
         </div>
       </header>
 
-      <!-- Welcom Section-->
+      <!-- Welcome Section-->
       <section
-        class="relative px-8 md:p-20 mx-auto w-full max-w-[1360px] bg-white overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center gap-10"
+        class="relative px-8 md:p-20 mx-auto w-full max-w-[1360px] bg-[#fef7f2] overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center gap-10"
       >
         <div class="space-y-6 max-w-xl text-center md:text-left z-10">
           <h1
@@ -106,79 +106,85 @@
       </section>
 
       <!-- Search : BK-->
-      <aside
-        class="flex flex-col justify-center items-center mx-auto w-full max-w-[1070px] bg-[#DDC7BB] rounded-[18px] p-12 mb-16"
+      <div
+        id="search-container"
+        class="w-full bg-gradient-to-b from-[#fef7f2] to-[#fff]"
       >
-        <div>
-          <form action="" class="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full">
-            <div class="relative">
-              <span
-                class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
-              >
-                <img
-                  src="static/icons/pin.png"
-                  alt="Location icons created by kmg design - Flaticon"
-                  class="w-5 h-5"
+        <aside
+          class="flex shadow-lg shadow-[var(--input-color)] flex-col justify-center items-center mx-auto w-full max-w-[1070px] bg-[#DDC7BB] rounded-[18px] p-12 mb-16"
+        >
+          <div>
+            <form
+              action=""
+              class="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full"
+            >
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/pin.png"
+                    alt="Location icons created by kmg design - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <input
+                  class="pr-4 p-3 rounded border border-[#FBF5F1] font-bold text-[#2b1b12] bg-white w-full"
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Location"
                 />
-              </span>
-              <input
-                class="pr-4 p-3 rounded border border-[#FBF5F1] font-bold text-[#2b1b12] bg-white w-full"
-                type="text"
-                name="location"
-                id="location"
-                placeholder="Location"
-              />
-            </div>
-            <div class="relative">
-              <span
-                class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
-              >
-                <img
-                  src="static/icons/home.png"
-                  alt="Home icons created by Dave Gandy - Flaticon"
-                  class="w-5 h-5"
+              </div>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/home.png"
+                    alt="Home icons created by Dave Gandy - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <input
+                  class="pr-4 p-3 rounded border border-[#FBF5F1] font-bold text-[#2b1b12] bg-white w-full"
+                  type="text"
+                  name="type"
+                  id="type"
+                  value=""
+                  placeholder="Type"
                 />
-              </span>
-              <input
-                class="pr-4 p-3 rounded border border-[#FBF5F1] font-bold text-[#2b1b12] bg-white w-full"
-                type="text"
-                name="type"
-                id="type"
-                value=""
-                placeholder="Type"
-              />
-            </div>
-
-            <div class="relative">
-              <span
-                class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
-              >
-                <img
-                  src="static/icons/save-money.png"
-                  alt="Save money icons created by Kiranshastry - Flaticon"
-                  class="w-5 h-5"
+              </div>
+              <div class="relative">
+                <span
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="static/icons/save-money.png"
+                    alt="Save money icons created by Kiranshastry - Flaticon"
+                    class="w-5 h-5"
+                  />
+                </span>
+                <input
+                  class="pr-4 p-3 rounded border border-[#FBF5F1] font-bold text-[#2b1b12] bg-white w-full"
+                  type="text"
+                  name="price-range"
+                  id="price-range"
+                  value=""
+                  placeholder="Price Range"
                 />
-              </span>
-              <input
-                class="pr-4 p-3 rounded border border-[#FBF5F1] font-bold text-[#2b1b12] bg-white w-full"
-                type="text"
-                name="price-range"
-                id="price-range"
-                value=""
-                placeholder="Price Range"
-              />
-            </div>
-
-            <div class="flex justify-start sm:justify-center">
-              <input
-                class="bg-[#2b1b12] rounded-md px-10 py-3 text-white font-bold cursor-pointer hover:bg-[#3a2518] shadow-md hover:shadow-lg transition-all duration-300"
-                type="button"
-                value="Sign Up"
-              />
-            </div>
-          </form>
-        </div>
-      </aside>
+              </div>
+              <div class="flex justify-start sm:justify-center">
+                <input
+                  class="bg-[#2b1b12] rounded-md px-10 py-3 text-white font-bold cursor-pointer hover:bg-[#3a2518] shadow-md hover:shadow-lg transition-all duration-300"
+                  type="button"
+                  value="Sign Up"
+                />
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
 
       <!-- Article One : PS-->
       <article class="max-w-[1360px] mx-auto mb-20">
